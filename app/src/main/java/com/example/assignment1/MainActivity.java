@@ -60,7 +60,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     double rebate = 0.0; // Default value of 0
                     String rebateText = etRebate.getText().toString();
                     if (!rebateText.isEmpty()) {
-                        rebate = Double.parseDouble(rebateText) / 100;
+                        rebate = Double.parseDouble(rebateText) ;
+                        if (rebate > 5){
+
+                            throw new IllegalArgumentException();
+                        }else{
+                            rebate = rebate/100;
+                        }
+
                     }
                     int B1 = 200; //block size
                     int B2 = 100;
@@ -131,6 +138,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     } catch (NumberFormatException e) {
                     // Handle the exception when the input is not a valid number
                     Toast.makeText(this, "Please enter electricity unit used!", Toast.LENGTH_SHORT).show();
+                } catch (IllegalArgumentException e){
+                    Toast.makeText(this, "Rebate only 0-5% !", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.btnClear:

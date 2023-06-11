@@ -15,7 +15,7 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about);
     }
     public void openUrl(View view) {
-        String url = "https://github.com"; // Replace with your actual GitHub URL
+        String url = "https://github.com/lilyraf/Assignment1"; // Replace with your actual GitHub URL
 
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
