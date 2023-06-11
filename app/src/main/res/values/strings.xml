@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Electric Bill Calculator</string>
+    <string name="copyright">Copyright &#169; 2023 Asyraf Salihin</string>
+    <string name="about_text">This is an application to estimate the electricity bill. This applictaion is created by Asyraf Salihin bin Zamri 2021315255 RCS2405B ICT602 </string>
+    <string name="title_activity_about">AboutActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
